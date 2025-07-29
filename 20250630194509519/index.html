@@ -41,82 +41,74 @@
       sizes="180x180"
     />
     <style type="text/css">
-  /* Asegurar que la página ocupe el 100% del ancho en móviles */
-  body, html {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  /* Asegurarse de que el cuerpo ocupe todo el ancho de la pantalla */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 
-  /* Asegurar que todo se ajuste a la pantalla */
-  .container {
+/* Estilo para el contenedor principal */
+#root {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Ajustar el video para pantallas móviles */
+video {
+  max-width: 100%;  /* Ajustar al ancho de la pantalla */
+  height: auto;     /* Mantener la proporción del video */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hacer que el contenedor principal de la página sea flexible */
+._4KoDHA, .onhyOQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Ajustes de imagen de fondo */
+.fbzKiw {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries para dispositivos móviles (pantallas de 768px o menos) */
+@media (max-width: 768px) {
+  .ZRRuDw, .KYQZFA {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 10px;
   }
 
-  /* Usar Flexbox para que los elementos dentro de un contenedor sean flexibles */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  /* Columnas que ocupan todo el ancho en pantallas pequeñas */
-  .col {
-    flex: 1 1 100%;
-    padding: 5px;
-    box-sizing: border-box;
-  }
-
-  /* En pantallas medianas (tabletas) las columnas ocuparán el 50% */
-  @media (min-width: 768px) {
-    .col {
-      flex: 1 1 48%; /* Ocupa el 48% en pantallas medianas */
-    }
-  }
-
-  /* En pantallas grandes las columnas ocuparán el 33% */
-  @media (min-width: 1024px) {
-    .col {
-      flex: 1 1 30%; /* Ocupa el 30% en pantallas grandes */
-    }
-  }
-
-  /* Hacer que las imágenes se adapten al tamaño de la pantalla */
-  img {
-    max-width: 100%;
+  .twbtjQ, .GDnEHQ {
+    width: 100%;
     height: auto;
   }
 
-  /* Asegurar que el texto no se desborde */
-  body {
-    word-wrap: break-word;
+  /* El contenedor de los videos debe ocupar todo el ancho disponible */
+  .DF_utQ {
+    width: 100%;
+    height: auto;
+    transform: translate(0, 0);  /* Elimina el desplazamiento */
   }
 
-  /* Fondo y otros estilos generales */
-  .ql-container {
-    background-color: #fafafa; /* Fondo claro */
+  /* Ajuste de los textos */
+  h1, p {
+    font-size: 16px;
+    text-align: center;
     padding: 10px;
   }
+}
 
-  .ql-editor {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  /* Hacer que la barra de herramientas se ajuste */
-  .ql-toolbar {
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-  }
-
-  /* Estilo para botones en la barra de herramientas */
-  .ql-toolbar button {
-    color: #333;
-  }
 </style>
 
     <link rel="stylesheet" type="text/css" href="82a10fe01b3171ad.ltr.css" />
