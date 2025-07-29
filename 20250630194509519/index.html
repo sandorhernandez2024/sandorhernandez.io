@@ -41,6 +41,51 @@
       sizes="180x180"
     />
     <style type="text/css">
+  /* Estilo básico para contenedores */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  /* Utilizando flexbox para las filas */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Las columnas ocuparán el 100% del ancho en pantallas pequeñas */
+  .col {
+    flex: 1 1 100%;
+    padding: 5px;
+  }
+
+  /* En pantallas medianas (tabletas) las columnas ocuparán el 50% */
+  @media (min-width: 768px) {
+    .col {
+      flex: 1 1 50%;
+    }
+  }
+
+  /* En pantallas grandes las columnas ocuparán el 33% */
+  @media (min-width: 1024px) {
+    .col {
+      flex: 1 1 33%;
+    }
+  }
+
+  /* Estilos generales */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Asegúrate de que el texto no se desborde y se mantenga en una línea */
+  body {
+    word-wrap: break-word;
+  }
+
       @font-face {
         font-family: "YACgEcYqQ-A 0";
         src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
