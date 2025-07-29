@@ -40,7 +40,7 @@
       href="https://sandorrich.com/_assets/images/725b756a69a7d4c235070e51acd85560.png"
       sizes="180x180"
     />
-    <style type="text/css"
+    <style type="text/css">
   /* Asegurarse de que el cuerpo ocupe todo el ancho de la pantalla */
 body, html {
   margin: 0;
@@ -124,6 +124,38 @@ video {
   html {
     scroll-behavior: smooth;
   }
+</style>
+<style>
+@media (max-width: 768px) {
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  [style*="translate"], 
+  [style*="left"],
+  [style*="width:"] {
+    transform: none !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+  }
+
+  .DF_utQ, .twbtjQ, .GDnEHQ, .ZRRuDw, .KYQZFA {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  h1, p {
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+  }
+}
 </style>
 
   </head>
