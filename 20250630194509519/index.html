@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <title>SandorRich</title>
     <meta name="app-name" content="export_website" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="a0684b0780c739e9.vendor.ltr.css" rel="stylesheet" />
     <link href="fd3e2a33d300f82b.ltr.css" rel="stylesheet" />
     <link href="static_font_4.ltr.css" rel="stylesheet" />
@@ -41,74 +41,332 @@
       sizes="180x180"
     />
     <style type="text/css">
-  /* Asegurarse de que el cuerpo ocupe todo el ancho de la pantalla */
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-/* Estilo para el contenedor principal */
-#root {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* Ajustar el video para pantallas móviles */
-video {
-  max-width: 100%;  /* Ajustar al ancho de la pantalla */
-  height: auto;     /* Mantener la proporción del video */
-  display: block;
-  margin: 0 auto;
-}
-
-/* Hacer que el contenedor principal de la página sea flexible */
-._4KoDHA, .onhyOQ {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-/* Ajustes de imagen de fondo */
-.fbzKiw {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: auto;
-}
-
-/* Media Queries para dispositivos móviles (pantallas de 768px o menos) */
-@media (max-width: 768px) {
-  .ZRRuDw, .KYQZFA {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .twbtjQ, .GDnEHQ {
-    width: 100%;
-    height: auto;
-  }
-
-  /* El contenedor de los videos debe ocupar todo el ancho disponible */
-  .DF_utQ {
-    width: 100%;
-    height: auto;
-    transform: translate(0, 0);  /* Elimina el desplazamiento */
-  }
-
-  /* Ajuste de los textos */
-  h1, p {
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-  }
-  </style>
-<link rel="stylesheet" type="text/css" href="82a10fe01b3171ad.ltr.css" />
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("1060345c54d396e76d73f1da7ee200bd.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("98c4d2c0223fc8474641c77f923528e9.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 900;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("1060345c54d396e76d73f1da7ee200bd.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("98c4d2c0223fc8474641c77f923528e9.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 800;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("1060345c54d396e76d73f1da7ee200bd.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("98c4d2c0223fc8474641c77f923528e9.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("d257a7100844bc3f98c9021168b6249e.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("f8f199f09526f79e87644ed227e0f651.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 500;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("d257a7100844bc3f98c9021168b6249e.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("f8f199f09526f79e87644ed227e0f651.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 300;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("d257a7100844bc3f98c9021168b6249e.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("f8f199f09526f79e87644ed227e0f651.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 200;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("d257a7100844bc3f98c9021168b6249e.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("f8f199f09526f79e87644ed227e0f651.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 100;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("57520c8afe926d7643c80358edbb7b14.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YACgEcYqQ-A 0";
+        src: url("18b9e3530b8f43a6e1ab1d940ad0c0e6.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YAFdJvl8raw 0";
+        src: url("") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("98c4d2c0223fc8474641c77f923528e9.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("f8f199f09526f79e87644ed227e0f651.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("d257a7100844bc3f98c9021168b6249e.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "YACgEZ1cb1Q 0";
+        src: url("1060345c54d396e76d73f1da7ee200bd.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 700;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="82a10fe01b3171ad.ltr.css" />
     <style type="text/css">
       .ebLhMQ[style*="YACgEcYqQ-A 0"] {
         --1Zy1_A: -0.019;
@@ -125,39 +383,8 @@ video {
     scroll-behavior: smooth;
   }
 </style>
-<style>
-@media (max-width: 768px) {
-  * {
-    max-width: 100% !important;
-    box-sizing: border-box;
-  }
 
-  html, body {
-    overflow-x: hidden;
-  }
-
-  [style*="translate"], 
-  [style*="left"],
-  [style*="width:"] {
-    transform: none !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-  }
-
-  .DF_utQ, .twbtjQ, .GDnEHQ, .ZRRuDw, .KYQZFA {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  h1, p {
-    font-size: 16px;
-    padding: 10px;
-    text-align: center;
-  }
-}
-</style>
-</head>
+  </head>
   <body>
     <div id="root">
       <div class="yIDCqA">
@@ -212,15 +439,7 @@ video {
                                     width: 1243.8px;
                                     height: 528.8px;
                                   "
-                                
-                                        class="bFnJ2A"
-                                        style="
-                                          clip-path: url('#__id4');
-                                          width: 2120.89px;
-                                          height: 258px;
-                                          transform: scale(0.231566);
-                                          transform-origin: 0px 0px 0px;
-                                        "></div>
+                                ></div>
                                 <div
                                   class="DF_utQ _682gpw _0xkaeQ"
                                   style="
@@ -345,6 +564,14 @@ video {
                                         </defs>
                                       </svg>
                                       <div
+                                        class="bFnJ2A"
+                                        style="
+                                          clip-path: url('#__id4');
+                                          width: 2120.89px;
+                                          height: 258px;
+                                          transform: scale(0.231566);
+                                          transform-origin: 0px 0px 0px;
+                                        "
                                       >
                                         <div class="Ms_IOA">
                                           <svg
