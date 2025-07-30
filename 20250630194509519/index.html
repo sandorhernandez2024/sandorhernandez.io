@@ -11,7 +11,7 @@
     <meta charset="UTF-8" />
     <title>SandorRich</title>
     <meta name="app-name" content="export_website" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=1350, user-scalable=yes">
     <link href="a0684b0780c739e9.vendor.ltr.css" rel="stylesheet" />
     <link href="fd3e2a33d300f82b.ltr.css" rel="stylesheet" />
     <link href="static_font_4.ltr.css" rel="stylesheet" />
@@ -40,38 +40,24 @@
   html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  img, video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-</style>
-    <style type="text/css">
-      <style>
-  html, body {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     width: 1350px;
   }
 
   @media screen and (max-width: 1350px) {
     body {
-      transform: scale(calc((100vw - 20px ) /1350));
-      transform-origin: top left;
+      transform: scale(calc(100vw / 1350));
+      transform-origin: top center;
       width: 1350px;
       height: auto;
+      margin: 0 auto;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%) scale(calc(100vw / 1350));
     }
   }
 </style>
-      </head>
+  </head>
   <body>
     <div id="root">
       <div class="yIDCqA">
