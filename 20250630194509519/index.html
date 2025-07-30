@@ -41,17 +41,23 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 1350px;
+    width: 100%;
   }
 
-  @media screen and (max-width: 1350px) {
+  @media screen and (max-width: 100%) {
     body {
-      transform: scale(calc(100vw / 1350));
+      transform: scale(calc(150vw / 100%));
       transform-origin: top left;
-      width: 1350px;
+      width: 100%;
       height: auto;
     }
   }
+  <style>
+  /* Fuerza ocultar divs que solo generan espacio */
+  div[style*="height: 100%"][style*="position: absolute"] {
+    display: none !important;
+  }
+</style>
 </style>
   </head>
   <body>
@@ -69,19 +75,12 @@
                     data-scroll-ready="true"
                   >
                     <div>
-                      <div
-                        class="onhyOQ"
-                        style="
-                          width: 1400px;
-                          height: 100vh;
-                          align-items: center;
-                        "
-                      >
+                      
                         <div class="twbtjQ">
                           <div
                             class="GDnEHQ"
                             style="
-                              width: 1400px;
+                              width: 1350px;
                               height: 100%;
                               background-color: rgb(255, 255, 255);
                             "
@@ -100,15 +99,7 @@
                                     ></div>
                                   </div>
                                 </div>
-                                <div
-                                  style="
-                                    position: absolute;
-                                    top: 100%;
-                                    left: 100%;
-                                    width: 100%;
-                                    height: 100%;
-                                  "
-                                ></div>
+                                
                                 <div
                                   class="DF_utQ _682gpw _0xkaeQ"
                                   style="
@@ -249,34 +240,7 @@
                                             viewBox="0 0 2120.893 258"
                                             preserveAspectRatio="xMidYMid slice"
                                           >
-                                            <defs>
-                                              <linearGradient
-                                                gradientUnits="userSpaceOnUse"
-                                                id="__id5__id6"
-                                                x1="1060.446"
-                                                y1="0"
-                                                x2="1060.446"
-                                                y2="258"
-                                              >
-                                                <stop
-                                                  stop-color="#000000"
-                                                  stop-opacity="1"
-                                                  offset="0"
-                                                ></stop>
-                                                <stop
-                                                  stop-color="#1e852f"
-                                                  stop-opacity="1"
-                                                  offset="1"
-                                                ></stop>
-                                              </linearGradient>
-                                            </defs>
-                                            <rect
-                                              x="0"
-                                              y="0"
-                                              width="2120.893"
-                                              height="258"
-                                              fill="url(#__id5__id6)"
-                                            ></rect>
+                                            
                                           </svg>
                                         </div>
                                       </div>
@@ -349,18 +313,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div
-                                      style="
-                                        position: absolute;
-                                        top: 0px;
-                                        left: 0px;
-                                        transform-origin: 0px 0px 0px;
-                                        height: 39.0901px;
-                                        width: 38.9723px;
-                                        pointer-events: none;
-                                        transform: scale(1);
-                                      "
-                                    ></div>
+                                    
                                   </div>
                                 </div>
                                 <div
@@ -1055,93 +1008,26 @@
                                     touch-action: pan-x pan-y pinch-zoom;
                                     width: 491.127px;
                                     height: 59.744px;
-                                    transform: translate(803.073px, 8.52799px);
+                                    
                                   "
                                 >
                                   <div
                                     style="
-                                      position: absolute;
-                                      top: 0px;
-                                      left: 0px;
+                                      position: relative;
+                                      top: 1000px;
+                                      left: px;
                                       transform-origin: 0px 0px 0px;
-                                      height: 59.744px;
-                                      width: 491.127px;
-                                      transform: scale(1);
+                                      height: 1000px;
+                                      width: 100px;
+                                      
                                     "
-                                  >
-                                    <div
-                                      class="hWv4NA"
-                                      style="
-                                        width: 491.127px;
-                                        height: 59.744px;
-                                        margin-left: 0px;
-                                        margin-top: 0px;
-                                      "
                                     >
-                                      <svg class="_7KaXww">
-                                        <defs>
-                                          <clipPath id="__id23">
-                                            <path
-                                              d="M128.99999995049853,0L1991.8927317372631,0C2026.1056589091256,0 2058.917313571441,13.591032429841718 2083.1095064146807,37.78322527308125C2107.30169925792,61.97541796085754 2120.892731687762,94.78707277863636 2120.892731687762,128.99999995049853C2120.892731687762,163.2129271223607 2107.30169925792,196.02458194013954 2083.1095064146807,220.21677478337907C2058.917313571441,244.4089676266186 2026.1056589091256,258.00000005646035 1991.8927317372631,258.00000005646035L128.99999995049853,258.00000005646035C94.78707277863636,258.00000005646035 61.97541796085754,244.4089676266186 37.78322527308125,220.21677478337907C13.591032429841718,196.02458194013954 0,163.2129271223607 0,128.99999995049853C0,94.78707277863636 13.591032429841718,61.97541796085754 37.78322527308125,37.78322527308125C61.97541796085754,13.591032429841718 94.78707277863636,0 128.99999995049853,0Z"
-                                            ></path>
-                                          </clipPath>
-                                        </defs>
-                                      </svg>
-                                      <div
-                                        class="bFnJ2A"
-                                        style="
-                                          clip-path: url('#__id23');
-                                          width: 2120.89px;
-                                          height: 258px;
-                                          transform: scale(0.231566);
-                                          transform-origin: 0px 0px 0px;
-                                        "
-                                      >
-                                        <div class="Ms_IOA">
-                                          <svg
-                                            class="_KMJVg"
-                                            role="presentation"
-                                            viewBox="0 0 2120.893 258"
-                                            preserveAspectRatio="xMidYMid slice"
-                                          >
-                                            <defs>
-                                              <linearGradient
-                                                gradientUnits="userSpaceOnUse"
-                                                id="__id24__id25"
-                                                x1="1060.446"
-                                                y1="0"
-                                                x2="1060.446"
-                                                y2="258"
-                                              >
-                                                <stop
-                                                  stop-color="#000000"
-                                                  stop-opacity="1"
-                                                  offset="0"
-                                                ></stop>
-                                                <stop
-                                                  stop-color="#1e852f"
-                                                  stop-opacity="1"
-                                                  offset="1"
-                                                ></stop>
-                                              </linearGradient>
-                                            </defs>
-                                            <rect
-                                              x="0"
-                                              y="0"
-                                              width="2120.893"
-                                              height="258"
-                                              fill="url(#__id24__id25)"
-                                            ></rect>
-                                          </svg>
-                                        </div>
-                                      </div>
-                                    </div>
                                     <svg
                                       class="qY_pAA"
                                       style="
                                         overflow: hidden;
-                                        width: 491.127px;
-                                        height: 59.744px;
+                                        width: 100%;
+                                        height: 100%;
                                       "
                                       viewBox="0 0 136.4240575097325 16.595562006368255"
                                     >
@@ -1150,19 +1036,7 @@
                                           <path
                                             d="M8.297781,0L128.12627651,0C130.32698486,0 132.43755792,0.8742279900000001 133.99369372,2.43036379C135.54982952,3.9864995800000003 136.42405751,6.09707265 136.42405751,8.297781L136.42405751,8.297781C136.42405751,10.49848935 135.54982952,12.60906242 133.99369372,14.16519822C132.43755792,15.72133402 130.32698486,16.595562010000002 128.12627651,16.595562010000002L8.297781,16.595562010000002C6.09707265,16.595562010000002 3.9864995800000003,15.72133402 2.43036379,14.16519822C0.8742279900000001,12.60906242 0,10.49848935 0,8.297781L0,8.297781C0,6.09707265 0.8742279900000001,3.9864995800000003 2.43036379,2.43036379C3.9864995800000003,0.8742279900000001 6.09707265,0 8.297781,0Z"
                                           ></path>
-                                        </clipPath>
-                                      </defs>
-                                      <path
-                                        d="M8.297781,0L128.12627651,0C130.32698486,0 132.43755792,0.8742279900000001 133.99369372,2.43036379C135.54982952,3.9864995800000003 136.42405751,6.09707265 136.42405751,8.297781L136.42405751,8.297781C136.42405751,10.49848935 135.54982952,12.60906242 133.99369372,14.16519822C132.43755792,15.72133402 130.32698486,16.595562010000002 128.12627651,16.595562010000002L8.297781,16.595562010000002C6.09707265,16.595562010000002 3.9864995800000003,15.72133402 2.43036379,14.16519822C0.8742279900000001,12.60906242 0,10.49848935 0,8.297781L0,8.297781C0,6.09707265 0.8742279900000001,3.9864995800000003 2.43036379,2.43036379C3.9864995800000003,0.8742279900000001 6.09707265,0 8.297781,0Z"
-                                        stroke="#2eb843"
-                                        stroke-width="6"
-                                        stroke-linecap="butt"
-                                        clip-path="url(#__id27)"
-                                        fill="none"
-                                        vector-effect="non-scaling-stroke"
-                                      ></path>
-                                    </svg>
-                                  </div>
+                                        
                                   <a
                                     class="_3zDNwA"
                                     href=""
@@ -2390,7 +2264,7 @@
                   <section
                     id="PBBfDt421qmT5mZV"
                     class="rGeu6w"
-                    style="background-color: rgb(0, 0, 0)"
+                    
                     data-scroll-ready="true"
                   >
                     <div>
@@ -4043,12 +3917,7 @@
                       </div>
                     </div>
                   </section>
-                  <section
-                    id="0"
-                    class="rGeu6w"
-                    style="background-color: rgb(0, 0, 0)"
-                    data-scroll-ready="true"
-                  >
+        
                     <div>
                       <div class="_8jGYJw" style="width: 1376px; height: 673px">
                         <div class="fMSICA h517IA" aria-hidden="false">
