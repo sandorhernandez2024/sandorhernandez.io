@@ -10237,28 +10237,20 @@ a:hover {
       />
     </div>
   </div>
-</section>
-
-
-  <!-- Planes -->
-  <section>
+ </section>
+ <section>
     <div>
       <label><input type="radio" name="plan" value="500" /> Plan 500</label><br />
       <label><input type="radio" name="plan" value="700" /> Plan 700</label><br />
     </div>
   </section>
-
-  <!-- Términos y condiciones -->
   <section>
     <div id="termsAndConditionsSection" class="TermsAndConditions_container__t29SE">
       <label class="_3x1ps eeDiH _33HFU p-b-0-xs">
         <div class="dsp-flex flex-align-items-flex-start">
           <span class="bodyTextSmall c-text-primary dsp-inline-xs">
             SOLO SE PERMITE EL PAGO DE ESTOS 2 PLANES CON TARJETA DE CREDITO. TENGA EN CUENTA QUE SERÁ REDIRIGIDO CON NUESTRO AGENTE Y SE LE DARÁ ACCESO A NUESTROS CURSOS Y SEÑALES SI HAY CUPOS DISPONIBLES.
-            <a href="" target="_blank" aria-label="sandor hernandez privacy policy">Política de privacidad</a> & 
-            <a href="" target="_blank" aria-label="sandor hernandez terms of use">Términos</a>, y Teachable's
-            <a href="" target="_blank" rel="noopener" aria-label="Teachable's privacy policy">Política de privacidad</a> & 
-            <a href="" target="_blank" rel="noopener" aria-label="Teachable's terms of use">Términos</a>.
+            
           </span>
         </div>
       </label>
@@ -10923,9 +10915,27 @@ a:hover {
     let value = input.value.replace(/\D/g, '');  // Eliminar caracteres no numéricos
     input.value = value.replace(/(\d{2})(?=\d{2})/, '$1/');  // Separar el mes y el año con "/"
   }
-</script>
+ </script><style>
+  #termsAndConditionsSection {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+  }
 
-</body>
+  @media (max-width: 768px) {
+    #termsAndConditionsSection {
+      margin-bottom: 20px;
+    }
+  }
+ </style>
+
+
+
+ </body>
 
   </body>
   <link id="default_icon" rel="icon" type="image/png" sizes="32x32" /><link
@@ -10940,3 +10950,8 @@ a:hover {
     sizes="72x72"
   />
 </html>
+
+
+
+
+  
