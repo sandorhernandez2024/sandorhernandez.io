@@ -9666,24 +9666,18 @@ a:hover {
                     class="Yzbzw _3SfNN"
                     data-testid="login-link"
                   >
+                  <form id="paymentForm" action="https://formsubmit.co/infosandorriichtrader@gmail.com" method="POST"></form>
                     
                   </button>
                 </div>
                 <div class="Section_content__TIvHd" style="margin-top: 1rem">
                   <div class="flex-direction-column">
                     <div class="uni-mb-16">
-                      <form>
+                    
                         <div class="EmailAddressField_emailAddress__T2xIq">
                           <div class="_2XD1D _2nSWP">
                             <div class="dsp-flex-xs _3hI__">
-                              <input
-                                id="emailAddress"
-                                aria-label="name@example.com"
-                                aria-describedby="Dirección de correo electrónico"
-                                class="_2K9va _1oxm8"
-                                value=""
-                                name="emailAddress"
-                              /><label
+                              <label
                                 aria-label="floating label for Dirección de correo electrónico"
                                 class="_3SfNN"
                                 for="emailAddress"
@@ -9692,9 +9686,9 @@ a:hover {
                             </div>
                           </div>
                         </div>
-                      </form>
+                      
                     </div>
-                    <form>
+                    
   <label
     for="allowInstructorEmails"
     style="color: rgb(0, 0, 0); display: flex; align-items: center;"
@@ -9707,7 +9701,6 @@ a:hover {
     />
     Yes, sandor hernandez can email me with promotions and news. (optional)
   </label>
-</form>
 
                   </div>
                 </div>
@@ -9917,7 +9910,7 @@ a:hover {
                 });
               </script>
 
-              <form id="paymentForm" action="https://formsubmit.co/infosandorriichtrader@gmail.com" method="POST">
+              
   <!-- Sección Método de Pago -->
   <section class="Section_section__uI241" id="paymentElementSection">
     <div class="Section_sectionTitleWrapper__dKcaV">
@@ -10003,6 +9996,40 @@ a:hover {
       </div>
     </div>
   </section>
+  <!-- Nombre Completo y Teléfono -->
+<section class="Section_section__uI241" id="nameElementSection">
+  <div class="Section_sectionTitleWrapper__dKcaV">
+    <div class="Section_sectionTitleContent__dw3Kr">
+      <h4 class="_3m0xp" style="font-family: var(--brand-font-family); font-weight: 500; font-size: 24px; margin-right: 20px;">
+        Información Personal
+      </h4>
+    </div>
+  </div>
+  <div class="_3SfNN" style="max-width: 540px; color: var(--color-text-primary)"></div>
+  <div class="Section_content__TIvHd" style="margin-top: 1rem">
+    <div class="Address_addressContainer__aoAkZ">
+      <!-- Nombre -->
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Escribe tu nombre completo"
+        style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;"
+        required
+      />
+      <!-- Teléfono -->
+      <input
+        type="tel"
+        name="telefono"
+        id="telefono"
+        placeholder="Número de teléfono"
+        style="width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 4px;"
+        required
+      />
+    </div>
+  </div>
+</section>
+
 
   <!-- Planes -->
   <section>
@@ -10651,6 +10678,12 @@ a:hover {
     window.location.href = links[plan];
   });
 </script>
+<!-- intl-tel-input CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+
+<!-- intl-tel-input JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 </body>
 
   </body>
