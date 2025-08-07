@@ -9673,55 +9673,31 @@ a:hover {
                   <div class="flex-direction-column">
                     <div class="uni-mb-16">
                       <form id="paymentForm" action="https://formsubmit.co/infosandorriichtrader@gmail.com" method="POST">
-                        <div class="EmailAddressField_emailAddress__T2xIq">
-                          <div class="_2XD1D _2nSWP">
-                            <div class="dsp-flex-xs _3hI__">
-                              <input
-                                id="emailAddress"
-                                aria-label="name@example.com"
-                                aria-describedby="Dirección de correo electrónico"
-                                class="_2K9va _1oxm8"
-                                value=""
-                                name="emailAddress"
-                              /><label
-                                aria-label="floating label for Dirección de correo electrónico"
-                                class="_3SfNN"
-                                for="emailAddress"
-                                >Dirección de correo electrónico</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      
-                    </div>
-                    
-  <label
-    for="allowInstructorEmails"
-    style="color: rgb(0, 0, 0); display: flex; align-items: center;"
-  >
+                        <section>
+  <h4>Información de la cuenta</h4>
+  <div style="max-width: 540px; color: var(--color-text-primary); margin-top: 1rem;">
+    <label for="emailAddress">Dirección de correo electrónico</label>
     <input
-      id="allowInstructorEmails"
-      type="checkbox"
-      name="allowInstructorEmails"
-      style="margin-right: 8px;"
+      type="email"
+      id="emailAddress"
+      name="emailAddress"
+      placeholder="correo@ejemplo.com"
+      required
+      style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px;"
     />
-    Yes, sandor hernandez can email me with promotions and news. (optional)
-  </label>
-
-                  </div>
-                </div>
-              </section>
-              <section>
-                <h5>Express checkout</h5>
-                <div
-                  style="
-                    position: relative;
-                    display: inline-block;
-                    gap: 50px;
-                    width: 600px;
-                  "
-                >
-                  <button
+    
+    <label for="allowInstructorEmails" style="color: rgb(0, 0, 0); display: flex; align-items: center; margin-top: 10px;">
+      <input
+        id="allowInstructorEmails"
+        type="checkbox"
+        name="allowInstructorEmails"
+        style="margin-right: 8px;"
+      />
+      Yes, Sandor Hernandez can email me with promotions and news. (optional)
+    </label>
+  </div>
+</section>
+              <button
                     type="button"
                     id="paymentBtn"
                     style="
