@@ -9697,90 +9697,80 @@ a:hover {
     </label>
   </div>
 </section>
-              <button
-                    type="button"
-                    id="paymentBtn"
-                    style="
-                      background: #ffcc00;
-                      border: none;
-                      padding: 1px;
-                      border-radius: 8px;
-                      cursor: pointer;
-                      display: flex;
-                      align-items: center;
-                      gap: 200px;
-                      width: 100%;
-                    "
-                  >
-                    <img src="iconzelle.svg" alt="Zelle" width="50" />
-                    <img src="iconusdt.svg" alt="USDT" width="50" />
-                    <img src="iconbitcoin.svg" alt="Bitcoin" width="50" />
-                  </button>
+<!-- CONTENEDOR BOTÓN + MENÚ -->
+<div style="position: relative; display: inline-block; width: 100%;">
+  
+  <button
+    type="button"
+    id="paymentBtn"
+    style="
+      background: #ffcc00;
+      border: none;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+    "
+  >
+    <img src="iconzelle.svg" alt="Zelle" width="30" />
+    <img src="iconusdt.svg" alt="USDT" width="30" />
+    <img src="iconbitcoin.svg" alt="Bitcoin" width="30" />
+  </button>
 
-                  <div
-                    id="paymentMenu"
-                    style="
-                      display: none;
-                      position: absolute;
-                      top: 60px;
-                      left: 0;
-                      background: #fff;
-                      border: 1px solid #ccc;
-                      padding: 10px;
-                      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-                      z-index: 100;
-                      width: 100%;
-                      box-sizing: border-box;
-                    "
-                  >
-                    <a
-                      href="https://nowpayments.io/payment/?iid=5952955208"
-                      target="_blank"
-                      style="
-                        display: block;
-                        margin-bottom: 8px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        color: #000;
-                      "
-                      >Pagar Plan 500</a
-                    >
-                    <a
-                      href="https://nowpayments.io/payment/?iid=6319701872"
-                      target="_blank"
-                      style="
-                        display: block;
-                        margin-bottom: 8px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        color: #000;
-                      "
-                      >Pagar Plan 700</a
-                    >
-                    <a
-                      href="https://nowpayments.io/payment/?iid=4859013472"
-                      target="_blank"
-                      style="
-                        display: block;
-                        margin-bottom: 8px;
-                        font-weight: bold;
-                        text-decoration: none;
-                        color: #000;
-                      "
-                      >Pagar Plan 1500</a
-                    >
-                    <a
-                      href="https://nowpayments.io/payment/?iid=4342651864"
-                      target="_blank"
-                      style="
-                        display: block;
-                        font-weight: bold;
-                        text-decoration: none;
-                        color: #000;
-                      "
-                      >Pagar Plan 2500</a
-                    >
-                  </div>
+  <!-- MENÚ DE PLANES -->
+  <div
+    id="paymentMenu"
+    style="
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      width: 100%;
+      box-sizing: border-box;
+    "
+  >
+    <a href="https://nowpayments.io/payment/?iid=5952955208" target="_blank"
+      style="display: block; margin-bottom: 8px; font-weight: bold; text-decoration: none; color: #000;">
+      Pagar Plan 500
+    </a>
+    <a href="https://nowpayments.io/payment/?iid=6319701872" target="_blank"
+      style="display: block; margin-bottom: 8px; font-weight: bold; text-decoration: none; color: #000;">
+      Pagar Plan 700
+    </a>
+    <a href="https://nowpayments.io/payment/?iid=4859013472" target="_blank"
+      style="display: block; margin-bottom: 8px; font-weight: bold; text-decoration: none; color: #000;">
+      Pagar Plan 1500
+    </a>
+    <a href="https://nowpayments.io/payment/?iid=4342651864" target="_blank"
+      style="display: block; font-weight: bold; text-decoration: none; color: #000;">
+      Pagar Plan 2500
+    </a>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("paymentBtn");
+  const menu = document.getElementById("paymentMenu");
+
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!btn.contains(event.target) && !menu.contains(event.target)) {
+      menu.style.display = "none";
+    }
+  });
+</script>
+
 
                   <a
   href="#"
